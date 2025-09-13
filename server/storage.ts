@@ -28,7 +28,7 @@ export class MemStorage implements IStorage {
         id: "1",
         name: "Kadhai Paneer",
         description: "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-        image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/kadhai-paneer.jfif",
         mealType: "MAIN COURSE",
         type: "VEG",
         dishType: "CURRY",
@@ -47,7 +47,7 @@ export class MemStorage implements IStorage {
         id: "2",
         name: "Butter Chicken",
         description: "Tender chicken in rich, creamy tomato and butter sauce with aromatic spices.",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/butter-chicken.jfif",
         mealType: "MAIN COURSE",
         type: "NON-VEG",
         dishType: "CURRY",
@@ -66,7 +66,7 @@ export class MemStorage implements IStorage {
         id: "3",
         name: "Garden Salad",
         description: "Fresh mixed greens with cherry tomatoes, cucumber, and house dressing.",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/green-salad.jfif",
         mealType: "STARTER",
         type: "VEG",
         dishType: "SALAD",
@@ -83,28 +83,28 @@ export class MemStorage implements IStorage {
       },
       {
         id: "4",
-        name: "Dal Tadka",
-        description: "Yellow lentils tempered with cumin, mustard seeds, and aromatic spices.",
-        image: "https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        name: "Dal Makhni",
+        description: "Creamy black lentils slow-cooked with butter, cream, and aromatic spices.",
+        image: "/images/dal-makhni.jfif",
         mealType: "MAIN COURSE",
         type: "VEG",
         dishType: "DAL",
         categoryId: 1,
         forParty: "true",
-        price: 220,
+        price: 240,
         ingredients: [
-          { name: "Yellow Lentils", quantity: "1 cup" },
-          { name: "Cumin Seeds", quantity: "1 tsp" },
-          { name: "Mustard Seeds", quantity: "1 tsp" },
-          { name: "Turmeric", quantity: "1/2 tsp" },
-          { name: "Green Chilies", quantity: "2" }
+          { name: "Black Lentils", quantity: "1 cup" },
+          { name: "Kidney Beans", quantity: "1/2 cup" },
+          { name: "Butter", quantity: "50g" },
+          { name: "Heavy Cream", quantity: "100ml" },
+          { name: "Garam Masala", quantity: "1 tsp" }
         ]
       },
       {
         id: "5",
         name: "Vegetable Samosa",
         description: "Crispy pastry filled with spiced potatoes, peas, and aromatic herbs.",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/samosa.jfif",
         mealType: "STARTER",
         type: "VEG",
         dishType: "SNACK",
@@ -123,7 +123,7 @@ export class MemStorage implements IStorage {
         id: "6",
         name: "Gulab Jamun",
         description: "Soft milk dumplings soaked in rose-flavored sugar syrup.",
-        image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/gulab-jamun.jfif",
         mealType: "DESSERT",
         type: "VEG",
         dishType: "SWEET",
@@ -142,7 +142,7 @@ export class MemStorage implements IStorage {
         id: "7",
         name: "Chicken Biryani",
         description: "Aromatic basmati rice layered with spiced chicken and saffron.",
-        image: "https://images.unsplash.com/photo-1563379091-2de6c4b49427?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/chicken-biryani.jfif",
         mealType: "MAIN COURSE",
         type: "NON-VEG",
         dishType: "RICE",
@@ -161,7 +161,7 @@ export class MemStorage implements IStorage {
         id: "8",
         name: "Garlic Naan",
         description: "Soft leavened bread topped with fresh garlic and herbs.",
-        image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/garlic-naan.jfif",
         mealType: "SIDES",
         type: "VEG",
         dishType: "BREAD",
@@ -180,7 +180,7 @@ export class MemStorage implements IStorage {
         id: "9",
         name: "Chicken Wings",
         description: "Crispy chicken wings tossed in spicy buffalo sauce.",
-        image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/chicken-wings.jfif",
         mealType: "STARTER",
         type: "NON-VEG",
         dishType: "APPETIZER",
@@ -199,7 +199,7 @@ export class MemStorage implements IStorage {
         id: "10",
         name: "Fish Tikka",
         description: "Marinated fish pieces grilled to perfection with aromatic spices.",
-        image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/fish-tikka.jfif",
         mealType: "STARTER",
         type: "NON-VEG",
         dishType: "GRILLED",
@@ -219,7 +219,7 @@ export class MemStorage implements IStorage {
         id: "11",
         name: "Paneer Tikka",
         description: "Marinated cottage cheese cubes grilled with bell peppers and onions.",
-        image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/paneer-tikka.jfif",
         mealType: "STARTER",
         type: "VEG",
         dishType: "GRILLED",
@@ -238,7 +238,7 @@ export class MemStorage implements IStorage {
         id: "12",
         name: "Seekh Kebab",
         description: "Spiced minced meat skewers grilled to perfection with herbs and spices.",
-        image: "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/seekh-kabab.jfif",
         mealType: "STARTER",
         type: "NON-VEG",
         dishType: "GRILLED",
@@ -258,7 +258,7 @@ export class MemStorage implements IStorage {
         id: "13",
         name: "Rajma Masala",
         description: "Red kidney beans cooked in rich tomato and onion gravy with spices.",
-        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/rajma-masala.jfif",
         mealType: "MAIN COURSE",
         type: "VEG",
         dishType: "CURRY",
@@ -277,7 +277,7 @@ export class MemStorage implements IStorage {
         id: "14",
         name: "Mutton Curry",
         description: "Tender mutton pieces cooked in traditional spices and rich gravy.",
-        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/mutton-curry.jfif",
         mealType: "MAIN COURSE",
         type: "NON-VEG",
         dishType: "CURRY",
@@ -297,7 +297,7 @@ export class MemStorage implements IStorage {
         id: "15",
         name: "Ras Malai",
         description: "Soft cottage cheese dumplings in sweetened thickened milk with cardamom.",
-        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/ras-malai.jfif",
         mealType: "DESSERT",
         type: "VEG",
         dishType: "SWEET",
@@ -316,7 +316,7 @@ export class MemStorage implements IStorage {
         id: "16",
         name: "Kulfi",
         description: "Traditional Indian ice cream with cardamom and pistachios.",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/kulfi.jfif",
         mealType: "DESSERT",
         type: "VEG",
         dishType: "FROZEN",
@@ -335,7 +335,7 @@ export class MemStorage implements IStorage {
         id: "17",
         name: "Gajar Halwa",
         description: "Rich carrot pudding cooked with milk, sugar and garnished with nuts.",
-        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/gajar-halwa.jfif",
         mealType: "DESSERT",
         type: "VEG",
         dishType: "SWEET",
@@ -354,7 +354,7 @@ export class MemStorage implements IStorage {
         id: "18",
         name: "Kheer",
         description: "Creamy rice pudding cooked in milk with cardamom and nuts.",
-        image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/kheer.jfif",
         mealType: "DESSERT",
         type: "VEG",
         dishType: "SWEET",
@@ -374,7 +374,7 @@ export class MemStorage implements IStorage {
         id: "19",
         name: "Jeera Rice",
         description: "Fragrant basmati rice cooked with cumin seeds and whole spices.",
-        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/jeera-rice.jfif",
         mealType: "SIDES",
         type: "VEG",
         dishType: "RICE",
@@ -393,7 +393,7 @@ export class MemStorage implements IStorage {
         id: "20",
         name: "Butter Naan",
         description: "Soft leavened bread brushed with butter and cooked in tandoor.",
-        image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/butter-naan.jfif",
         mealType: "SIDES",
         type: "VEG",
         dishType: "BREAD",
@@ -412,7 +412,7 @@ export class MemStorage implements IStorage {
         id: "21",
         name: "Mixed Raita",
         description: "Cooling yogurt side dish with cucumber, onion and mint.",
-        image: "https://images.unsplash.com/photo-1596797882870-8c33ddeaa639?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/mixed-raita.jfif",
         mealType: "SIDES",
         type: "VEG",
         dishType: "ACCOMPANIMENT",
@@ -431,7 +431,7 @@ export class MemStorage implements IStorage {
         id: "22",
         name: "Papad",
         description: "Crispy thin wafers made from lentil flour, perfect as a side.",
-        image: "https://images.unsplash.com/photo-1626132647523-66f4bf380027?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "/images/papad.jfif",
         mealType: "SIDES",
         type: "VEG",
         dishType: "ACCOMPANIMENT",
@@ -445,6 +445,413 @@ export class MemStorage implements IStorage {
           { name: "Asafoetida", quantity: "1 pinch" },
           { name: "Oil", quantity: "for frying" }
         ]
+      },
+      {
+        id: "23", // Make sure this is a unique ID
+        name: "Mutton Rogan Josh",
+        description: "Traditional Kashmiri lamb curry with aromatic spices and yogurt.",
+        image: "/images/mutton-rogan.jfif",
+        mealType: "MAIN COURSE", // Can be "STARTER", "MAIN COURSE", "DESSERT", or "SIDES"
+        type: "NON-VEG", // Can be "VEG" or "NON-VEG"
+        dishType: "CURRY",
+        categoryId: 1, // 1 for MAIN COURSE, 2 for STARTER, 3 for DESSERT, 4 for SIDES
+        forParty: "true",
+        price: 420,
+        ingredients: [
+          { name: "Mutton", quantity: "500g" },
+          { name: "Yogurt", quantity: "1/2 cup" },
+          { name: "Kashmiri Red Chilies", quantity: "2 tbsp" },
+          { name: "Garam Masala", quantity: "1 tsp" },
+          { name: "Fennel Seeds", quantity: "1 tsp" }
+        ]
+      },
+      
+      // 5 NEW STARTER ITEMS
+      {
+        id: "23",
+        name: "Spring Rolls",
+        description: "Crispy vegetable rolls with sweet chili dipping sauce.",
+        image: "/images/spring-rolls.jfif",
+        mealType: "STARTER",
+        type: "VEG",
+        dishType: "APPETIZER",
+        categoryId: 2,
+        forParty: "true",
+        price: 160,
+        ingredients: [
+          { name: "Cabbage", quantity: "1 cup" },
+          { name: "Carrot", quantity: "1/2 cup" },
+          { name: "Spring Roll Wrappers", quantity: "10" },
+          { name: "Soy Sauce", quantity: "2 tbsp" },
+          { name: "Ginger", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "24",
+        name: "Chicken Lollipop",
+        description: "Deep-fried chicken drumettes in spicy glaze.",
+        image: "/images/chicken-lollipop.jfif",
+        mealType: "STARTER",
+        type: "NON-VEG",
+        dishType: "APPETIZER",
+        categoryId: 2,
+        forParty: "true",
+        price: 240,
+        ingredients: [
+          { name: "Chicken Drumettes", quantity: "500g" },
+          { name: "Red Chili Powder", quantity: "1 tsp" },
+          { name: "Ginger-Garlic Paste", quantity: "1 tbsp" },
+          { name: "Soy Sauce", quantity: "2 tbsp" },
+          { name: "Honey", quantity: "1 tbsp" }
+        ]
+      },
+      {
+        id: "25",
+        name: "Aloo Tikki",
+        description: "Spiced potato patties with mint chutney.",
+        image: "/images/aloo-tikki.jfif",
+        mealType: "STARTER",
+        type: "VEG",
+        dishType: "SNACK",
+        categoryId: 2,
+        forParty: "true",
+        price: 130,
+        ingredients: [
+          { name: "Potatoes", quantity: "4 large" },
+          { name: "Green Chilies", quantity: "2" },
+          { name: "Cumin Powder", quantity: "1 tsp" },
+          { name: "Coriander", quantity: "2 tbsp" },
+          { name: "Bread Crumbs", quantity: "1/2 cup" }
+        ]
+      },
+      {
+        id: "26",
+        name: "Prawn Tempura",
+        description: "Lightly battered fried prawns with sweet chili sauce.",
+        image: "/images/prown.jfif",
+        mealType: "STARTER",
+        type: "NON-VEG",
+        dishType: "APPETIZER",
+        categoryId: 2,
+        forParty: "true",
+        price: 320,
+        ingredients: [
+          { name: "Prawns", quantity: "300g" },
+          { name: "Tempura Batter", quantity: "1 cup" },
+          { name: "Ice Water", quantity: "1/2 cup" },
+          { name: "Flour", quantity: "1/2 cup" },
+          { name: "Sweet Chili Sauce", quantity: "1/4 cup" }
+        ]
+      },
+      {
+        id: "27",
+        name: "Bruschetta",
+        description: "Toasted bread topped with tomatoes, basil and mozzarella.",
+        image: "/images/bruschetta.jfif",
+        mealType: "STARTER",
+        type: "VEG",
+        dishType: "APPETIZER",
+        categoryId: 2,
+        forParty: "true",
+        price: 180,
+        ingredients: [
+          { name: "Baguette", quantity: "1/2 loaf" },
+          { name: "Tomatoes", quantity: "2 large" },
+          { name: "Basil", quantity: "1/4 cup" },
+          { name: "Mozzarella", quantity: "100g" },
+          { name: "Balsamic Glaze", quantity: "2 tbsp" }
+        ]
+      },
+      
+      // 5 NEW MAIN COURSE ITEMS
+      {
+        id: "28",
+        name: "Palak Paneer",
+        description: "Cottage cheese cubes in creamy spinach gravy.",
+        image: "/images/palak-paneer.jfif",
+        mealType: "MAIN COURSE",
+        type: "VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 260,
+        ingredients: [
+          { name: "Paneer", quantity: "200g" },
+          { name: "Spinach", quantity: "500g" },
+          { name: "Onions", quantity: "2" },
+          { name: "Ginger-Garlic Paste", quantity: "1 tbsp" },
+          { name: "Garam Masala", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "29",
+        name: "Lamb Rogan Josh",
+        description: "Tender lamb in aromatic Kashmiri spices.",
+        image: "/images/lamb.jfif",
+        mealType: "MAIN COURSE",
+        type: "NON-VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 450,
+        ingredients: [
+          { name: "Lamb", quantity: "500g" },
+          { name: "Onions", quantity: "3" },
+          { name: "Yogurt", quantity: "1/2 cup" },
+          { name: "Kashmiri Chili", quantity: "2 tsp" },
+          { name: "Saffron", quantity: "pinch" }
+        ]
+      },
+      {
+        id: "30",
+        name: "Chana Masala",
+        description: "Spiced chickpea curry with onions and tomatoes.",
+        image: "/images/chana.jfif",
+        mealType: "MAIN COURSE",
+        type: "VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 200,
+        ingredients: [
+          { name: "Chickpeas", quantity: "2 cups" },
+          { name: "Tomatoes", quantity: "3" },
+          { name: "Onions", quantity: "2" },
+          { name: "Garam Masala", quantity: "1 tsp" },
+          { name: "Cumin Seeds", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "31",
+        name: "Prawn Biryani",
+        description: "Fragrant rice layered with spiced prawns and saffron.",
+        image: "/images/prawn.jfif",
+        mealType: "MAIN COURSE",
+        type: "NON-VEG",
+        dishType: "RICE",
+        categoryId: 1,
+        forParty: "true",
+        price: 380,
+        ingredients: [
+          { name: "Basmati Rice", quantity: "2 cups" },
+          { name: "Prawns", quantity: "300g" },
+          { name: "Saffron", quantity: "pinch" },
+          { name: "Mint", quantity: "1/4 cup" },
+          { name: "Yogurt", quantity: "1/2 cup" }
+        ]
+      },
+      {
+        id: "32",
+        name: "Eggplant Curry",
+        description: "Tender eggplant in spicy tomato-onion gravy.",
+        image: "/images/eggplant.jfif",
+        mealType: "MAIN COURSE",
+        type: "VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 230,
+        ingredients: [
+          { name: "Eggplant", quantity: "2 large" },
+          { name: "Tomatoes", quantity: "3" },
+          { name: "Onions", quantity: "2" },
+          { name: "Turmeric", quantity: "1/2 tsp" },
+          { name: "Coriander Powder", quantity: "1 tsp" }
+        ]
+      },
+      
+      // 5 NEW DESSERT ITEMS
+      {
+        id: "33",
+        name: "Chocolate Mousse",
+        description: "Light and airy chocolate mousse with berry compote.",
+        image: "/images/mousse.jfif",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 180,
+        ingredients: [
+          { name: "Dark Chocolate", quantity: "200g" },
+          { name: "Heavy Cream", quantity: "1 cup" },
+          { name: "Eggs", quantity: "3" },
+          { name: "Sugar", quantity: "1/4 cup" },
+          { name: "Vanilla Extract", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "34",
+        name: "Tiramisu",
+        description: "Classic Italian coffee-flavored dessert.",
+        image: "/images/tiramisu.jfif",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 220,
+        ingredients: [
+          { name: "Ladyfingers", quantity: "20" },
+          { name: "Mascarpone", quantity: "500g" },
+          { name: "Coffee", quantity: "1 cup" },
+          { name: "Cocoa Powder", quantity: "2 tbsp" },
+          { name: "Sugar", quantity: "1/4 cup" }
+        ]
+      },
+      {
+        id: "35",
+        name: "Fruit Parfait",
+        description: "Layered yogurt with seasonal fruits and granola.",
+        image: "/images/parfait.jfif",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 160,
+        ingredients: [
+          { name: "Greek Yogurt", quantity: "2 cups" },
+          { name: "Mixed Berries", quantity: "1 cup" },
+          { name: "Granola", quantity: "1/2 cup" },
+          { name: "Honey", quantity: "2 tbsp" },
+          { name: "Mint Leaves", quantity: "few" }
+        ]
+      },
+      {
+        id: "36",
+        name: "Cheesecake",
+        description: "Creamy New York style cheesecake with berry topping.",
+        image: "/images/cake.jfif",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 240,
+        ingredients: [
+          { name: "Cream Cheese", quantity: "500g" },
+          { name: "Graham Crackers", quantity: "1 cup" },
+          { name: "Sugar", quantity: "1/2 cup" },
+          { name: "Vanilla Extract", quantity: "1 tsp" },
+          { name: "Mixed Berries", quantity: "1/2 cup" }
+        ]
+      },
+      {
+        id: "37",
+        name: "Ice Cream Sundae",
+        description: "Vanilla ice cream with hot fudge and nuts.",
+        image: "/images/icecream.jfif",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "FROZEN",
+        categoryId: 3,
+        forParty: "true",
+        price: 150,
+        ingredients: [
+          { name: "Vanilla Ice Cream", quantity: "2 scoops" },
+          { name: "Hot Fudge", quantity: "1/4 cup" },
+          { name: "Chopped Nuts", quantity: "2 tbsp" },
+          { name: "Whipped Cream", quantity: "2 tbsp" },
+          { name: "Cherry", quantity: "1" }
+        ]
+      },
+      
+      // 5 NEW SIDES ITEMS
+      {
+        id: "38",
+        name: "Garlic Bread",
+        description: "Toasted bread with garlic butter and herbs.",
+        image: "/images/bread.jfif",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "BREAD",
+        categoryId: 4,
+        forParty: "true",
+        price: 90,
+        ingredients: [
+          { name: "Baguette", quantity: "1/2 loaf" },
+          { name: "Butter", quantity: "100g" },
+          { name: "Garlic", quantity: "4 cloves" },
+          { name: "Parsley", quantity: "2 tbsp" },
+          { name: "Salt", quantity: "to taste" }
+        ]
+      },
+      {
+        id: "39",
+        name: "Mashed Potatoes",
+        description: "Creamy mashed potatoes with butter and herbs.",
+        image: "/images/potato.jfif",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "ACCOMPANIMENT",
+        categoryId: 4,
+        forParty: "true",
+        price: 120,
+        ingredients: [
+          { name: "Potatoes", quantity: "1 kg" },
+          { name: "Butter", quantity: "100g" },
+          { name: "Milk", quantity: "1/4 cup" },
+          { name: "Chives", quantity: "2 tbsp" },
+          { name: "Salt", quantity: "to taste" }
+        ]
+      },
+      {
+        id: "40",
+        name: "Steamed Vegetables",
+        description: "Seasonal vegetables steamed with herbs.",
+        image: "/images/steam-vegies.jfif",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "ACCOMPANIMENT",
+        categoryId: 4,
+        forParty: "true",
+        price: 140,
+        ingredients: [
+          { name: "Broccoli", quantity: "1/2 head" },
+          { name: "Carrots", quantity: "2" },
+          { name: "Green Beans", quantity: "1 cup" },
+          { name: "Butter", quantity: "2 tbsp" },
+          { name: "Lemon Juice", quantity: "1 tbsp" }
+        ]
+      },
+      {
+        id: "41",
+        name: "Fried Rice",
+        description: "Egg fried rice with vegetables and soy sauce.",
+        image: "/images/fried.jfif",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "RICE",
+        categoryId: 4,
+        forParty: "true",
+        price: 160,
+        ingredients: [
+          { name: "Basmati Rice", quantity: "2 cups" },
+          { name: "Eggs", quantity: "2" },
+          { name: "Vegetables", quantity: "1 cup" },
+          { name: "Soy Sauce", quantity: "2 tbsp" },
+          { name: "Spring Onions", quantity: "2" }
+        ]
+      },
+      {
+        id: "42",
+        name: "Coleslaw",
+        description: "Fresh cabbage salad with creamy dressing.",
+        image: "/images/coleslaw.jfif",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "SALAD",
+        categoryId: 4,
+        forParty: "true",
+        price: 100,
+        ingredients: [
+          { name: "Cabbage", quantity: "1/2 head" },
+          { name: "Carrots", quantity: "2" },
+          { name: "Mayonnaise", quantity: "1/4 cup" },
+          { name: "Apple Cider Vinegar", quantity: "1 tbsp" },
+          { name: "Sugar", quantity: "1 tsp" }
+        ]
       }
     ];
 
@@ -452,6 +859,34 @@ export class MemStorage implements IStorage {
       this.dishes.set(dish.id, dish);
     });
   }
+
+  // 5 NEW STARTER ITEMS
+  // 1. Spring Rolls
+  // 2. Chicken Lollipop
+  // 3. Aloo Tikki
+  // 4. Prawn Tempura
+  // 5. Bruschetta
+  
+  // 5 NEW MAIN COURSE ITEMS
+  // 1. Palak Paneer
+  // 2. Lamb Rogan Josh
+  // 3. Chana Masala
+  // 4. Prawn Biryani
+  // 5. Eggplant Curry
+  
+  // 5 NEW DESSERT ITEMS
+  // 1. Chocolate Mousse
+  // 2. Tiramisu
+  // 3. Fruit Parfait
+  // 4. Cheesecake
+  // 5. Ice Cream Sundae
+  
+  // 5 NEW SIDES ITEMS
+  // 1. Garlic Bread
+  // 2. Mashed Potatoes
+  // 3. Steamed Vegetables
+  // 4. Fried Rice
+  // 5. Coleslaw
 
   async getUser(id: string): Promise<User | undefined> {
     return this.users.get(id);

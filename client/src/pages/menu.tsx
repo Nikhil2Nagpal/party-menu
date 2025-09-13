@@ -34,16 +34,18 @@ export default function MenuPage() {
       return false;
     }
     
-    // Veg/Non-veg filter
-    if (vegFilter || nonVegFilter) {
-      // If both filters are active, show all dishes (OR logic)
-      if (vegFilter && nonVegFilter) return true;
-      // If only veg filter is active, show only VEG dishes
-      if (vegFilter && dish.type !== "VEG") return false;
-      // If only non-veg filter is active, show only NON-VEG dishes
-      if (nonVegFilter && dish.type !== "NON-VEG") return false;
+    // Veg/Non-veg filter - exclusive filtering
+    if (vegFilter) {
+      // Only veg filter is active, show only VEG dishes
+      return dish.type === "VEG";
     }
     
+    if (nonVegFilter) {
+      // Only non-veg filter is active, show only NON-VEG dishes
+      return dish.type === "NON-VEG";
+    }
+    
+    // If no filter is active, show all dishes
     return true;
   });
 
@@ -59,16 +61,18 @@ export default function MenuPage() {
         return false;
       }
       
-      // Veg/Non-veg filter
-      if (vegFilter || nonVegFilter) {
-        // If both filters are active, show all dishes (OR logic)
-        if (vegFilter && nonVegFilter) return true;
-        // If only veg filter is active, show only VEG dishes
-        if (vegFilter && dish.type !== "VEG") return false;
-        // If only non-veg filter is active, show only NON-VEG dishes
-        if (nonVegFilter && dish.type !== "NON-VEG") return false;
+      // Veg/Non-veg filter - exclusive filtering
+      if (vegFilter) {
+        // Only veg filter is active, show only VEG dishes
+        return dish.type === "VEG";
       }
       
+      if (nonVegFilter) {
+        // Only non-veg filter is active, show only NON-VEG dishes
+        return dish.type === "NON-VEG";
+      }
+      
+      // If no filter is active, show all dishes
       return true;
     }).length;
   };
@@ -97,6 +101,21 @@ export default function MenuPage() {
     // Navigate to order page with selected dishes
     const dishIds = selectedDishes.join(",");
     navigate(`/order?dishes=${dishIds}`);
+  };
+
+  // Exclusive filter handlers
+  const handleVegFilterChange = (enabled: boolean) => {
+    setVegFilter(enabled);
+    if (enabled) {
+      setNonVegFilter(false); // Disable non-veg when veg is enabled
+    }
+  };
+
+  const handleNonVegFilterChange = (enabled: boolean) => {
+    setNonVegFilter(enabled);
+    if (enabled) {
+      setVegFilter(false); // Disable veg when non-veg is enabled
+    }
   };
 
   if (isLoading) {
@@ -140,9 +159,9 @@ export default function MenuPage() {
           searchTerm={searchTerm}
           onSearchChange={setSearchTerm}
           vegFilter={vegFilter}
-          onVegFilterChange={setVegFilter}
+          onVegFilterChange={handleVegFilterChange}
           nonVegFilter={nonVegFilter}
-          onNonVegFilterChange={setNonVegFilter}
+          onNonVegFilterChange={handleNonVegFilterChange}
         />
 
         {/* Category Tabs */}
