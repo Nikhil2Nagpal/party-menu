@@ -1,0 +1,703 @@
+Frontend Assignment - 2025
+Overview
+
+your UI design skills and logical thinking. The app allows users to select dishes for their party from a
+categorized menu. The goal is to demonstrate your understanding of component architecture, navigation,
+
+Figma Link: [link]
+
+Functional Requirements
+1. Menu Categories
+Four meal types must be displayed as selectable tabs:
+Starter
+Main Course
+Dessert
+Sides
+Tapping a tab should show dishes related to that category.
+2. Dish List
+Each dish card should display:
+Dish Name
+Short Description
+Image
+Button to Add/Remove the dish
+A link/button labeled "Ingredient" to view ingredients
+Added dishes must be visually marked and included in the selected count.
+3. Search Functionality
+A search bar must be available at the top.
+Should filter dishes based on dish name (case-insensitive).
+Search must apply only within the selected meal category.
+filtering, and list rendering in ReactJS.
+Build a Party Menu Selection App using ReactJS. The purpose of this assignment is to evaluate
+
+4. Veg / Non-Veg Filter
+Two toggle filters: Veg and Non-Veg.
+Must filter dishes based on the selected type.
+Filtered results must update the dish list immediately.
+5. Dish Selection Summary
+Show the count of selected dishes in each category tab.
+Also show a total selected dish count at the bottom.
+Display a Continue button (no navigation needed after that).
+6. Ingredient Detail Screen
+Clicking "Ingredient" on a dish should navigate to a new screen.
+Must display:
+Dish name and a short description
+Ingredient list with quantities (mock data)
+UI should be clean and match the mock design where possible.
+
+Tech Constraints
+
+Must use functional components and React Hooks.
+No need for data persistence or local storage.
+Use mock JSON data for dish and ingredient listings.
+Navigation should be implemented using React Navigation.
+
+Deliverables
+A public GitHub repository link.
+Screens implemented:
+Dish listing with search and filters
+Ingredient detail screen
+
+1 [
+2 {
+3 "categoryId": 1,
+4 "mealType": "MAIN COURSE",
+5 "type": "VEG",
+Must use ReactJS.
+
+6 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+7 "image": null,
+8 "category": {
+9 "id": 1,
+10 "name": "North Indian",
+11 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+12 "isRecommendedForMealSuggestion": true
+13 },
+14 "dishType": "CURRY",
+15 "forChefit": true,
+16 "forParty": true,
+17 "nameHi": "",
+18 "nameBn": "",
+19 "id": 1,
+20 "name": "Kadhai Paneer 1"
+21 },
+22 {
+23 "categoryId": 1,
+24 "mealType": "MAIN COURSE",
+25 "type": "VEG",
+26 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+27 "image": null,
+28 "category": {
+29 "id": 1,
+30 "name": "North Indian",
+31 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+32 "isRecommendedForMealSuggestion": true
+33 },
+34 "dishType": "CURRY",
+35 "forChefit": true,
+36 "forParty": true,
+37 "nameHi": "",
+38 "nameBn": "",
+39 "id": 2,
+40 "name": "Kadhai Paneer 2"
+41 },
+42 {
+43 "categoryId": 1,
+44 "mealType": "MAIN COURSE",
+45 "type": "VEG",
+46 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+47 "image": null,
+48 "category": {
+49 "id": 1,
+50 "name": "North Indian",
+51 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+52 "isRecommendedForMealSuggestion": true
+53 },
+54 "dishType": "CURRY",
+55 "forChefit": true,
+56 "forParty": true,
+57 "nameHi": "",
+58 "nameBn": "",
+59 "id": 3,
+60 "name": "Kadhai Paneer 3"
+
+61 },
+62 {
+63 "categoryId": 1,
+64 "mealType": "MAIN COURSE",
+65 "type": "VEG",
+66 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+67 "image": null,
+68 "category": {
+69 "id": 1,
+70 "name": "North Indian",
+71 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+72 "isRecommendedForMealSuggestion": true
+73 },
+74 "dishType": "CURRY",
+75 "forChefit": true,
+76 "forParty": true,
+77 "nameHi": "",
+78 "nameBn": "",
+79 "id": 4,
+80 "name": "Kadhai Paneer 4"
+81 },
+82 {
+83 "categoryId": 1,
+84 "mealType": "MAIN COURSE",
+85 "type": "VEG",
+86 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+87 "image": null,
+88 "category": {
+89 "id": 1,
+90 "name": "North Indian",
+91 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+92 "isRecommendedForMealSuggestion": true
+93 },
+94 "dishType": "CURRY",
+95 "forChefit": true,
+96 "forParty": true,
+97 "nameHi": "",
+98 "nameBn": "",
+99 "id": 5,
+100 "name": "Kadhai Paneer 5"
+101 },
+102 {
+103 "categoryId": 1,
+104 "mealType": "MAIN COURSE",
+105 "type": "VEG",
+106 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+107 "image": null,
+108 "category": {
+109 "id": 1,
+110 "name": "North Indian",
+111 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+112 "isRecommendedForMealSuggestion": true
+113 },
+114 "dishType": "CURRY",
+115 "forChefit": true,
+
+116 "forParty": true,
+117 "nameHi": "",
+118 "nameBn": "",
+119 "id": 6,
+120 "name": "Kadhai Paneer 6"
+121 },
+122 {
+123 "categoryId": 1,
+124 "mealType": "MAIN COURSE",
+125 "type": "VEG",
+126 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+127 "image": null,
+128 "category": {
+129 "id": 1,
+130 "name": "North Indian",
+131 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+132 "isRecommendedForMealSuggestion": true
+133 },
+134 "dishType": "CURRY",
+135 "forChefit": true,
+136 "forParty": true,
+137 "nameHi": "",
+138 "nameBn": "",
+139 "id": 7,
+140 "name": "Kadhai Paneer 7"
+141 },
+142 {
+143 "categoryId": 1,
+144 "mealType": "MAIN COURSE",
+145 "type": "VEG",
+146 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+147 "image": null,
+148 "category": {
+149 "id": 1,
+150 "name": "North Indian",
+151 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+152 "isRecommendedForMealSuggestion": true
+153 },
+154 "dishType": "CURRY",
+155 "forChefit": true,
+156 "forParty": true,
+157 "nameHi": "",
+158 "nameBn": "",
+159 "id": 8,
+160 "name": "Kadhai Paneer 8"
+161 },
+162 {
+163 "categoryId": 1,
+164 "mealType": "MAIN COURSE",
+165 "type": "VEG",
+166 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+167 "image": null,
+168 "category": {
+169 "id": 1,
+170 "name": "North Indian",
+
+171 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+172 "isRecommendedForMealSuggestion": true
+173 },
+174 "dishType": "CURRY",
+175 "forChefit": true,
+176 "forParty": true,
+177 "nameHi": "",
+178 "nameBn": "",
+179 "id": 9,
+180 "name": "Kadhai Paneer 9"
+181 },
+182 {
+183 "categoryId": 1,
+184 "mealType": "MAIN COURSE",
+185 "type": "VEG",
+186 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+187 "image": null,
+188 "category": {
+189 "id": 1,
+190 "name": "North Indian",
+191 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+192 "isRecommendedForMealSuggestion": true
+193 },
+194 "dishType": "CURRY",
+195 "forChefit": true,
+196 "forParty": true,
+197 "nameHi": "",
+198 "nameBn": "",
+199 "id": 10,
+200 "name": "Kadhai Paneer 10"
+201 },
+202 {
+203 "categoryId": 1,
+204 "mealType": "MAIN COURSE",
+205 "type": "VEG",
+206 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+207 "image": null,
+208 "category": {
+209 "id": 1,
+210 "name": "North Indian",
+211 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+212 "isRecommendedForMealSuggestion": true
+213 },
+214 "dishType": "CURRY",
+215 "forChefit": true,
+216 "forParty": true,
+217 "nameHi": "",
+218 "nameBn": "",
+219 "id": 11,
+220 "name": "Kadhai Paneer 11"
+221 },
+222 {
+223 "categoryId": 1,
+224 "mealType": "MAIN COURSE",
+225 "type": "VEG",
+
+226 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+227 "image": null,
+228 "category": {
+229 "id": 1,
+230 "name": "North Indian",
+231 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+232 "isRecommendedForMealSuggestion": true
+233 },
+234 "dishType": "CURRY",
+235 "forChefit": true,
+236 "forParty": true,
+237 "nameHi": "",
+238 "nameBn": "",
+239 "id": 12,
+240 "name": "Kadhai Paneer 12"
+241 },
+242 {
+243 "categoryId": 1,
+244 "mealType": "MAIN COURSE",
+245 "type": "VEG",
+246 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+247 "image": null,
+248 "category": {
+249 "id": 1,
+250 "name": "North Indian",
+251 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+252 "isRecommendedForMealSuggestion": true
+253 },
+254 "dishType": "CURRY",
+255 "forChefit": true,
+256 "forParty": true,
+257 "nameHi": "",
+258 "nameBn": "",
+259 "id": 13,
+260 "name": "Kadhai Paneer 13"
+261 },
+262 {
+263 "categoryId": 1,
+264 "mealType": "MAIN COURSE",
+265 "type": "VEG",
+266 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+267 "image": null,
+268 "category": {
+269 "id": 1,
+270 "name": "North Indian",
+271 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+272 "isRecommendedForMealSuggestion": true
+273 },
+274 "dishType": "CURRY",
+275 "forChefit": true,
+276 "forParty": true,
+277 "nameHi": "",
+278 "nameBn": "",
+279 "id": 14,
+280 "name": "Kadhai Paneer 14"
+
+281 },
+282 {
+283 "categoryId": 1,
+284 "mealType": "MAIN COURSE",
+285 "type": "VEG",
+286 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+287 "image": null,
+288 "category": {
+289 "id": 1,
+290 "name": "North Indian",
+291 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+292 "isRecommendedForMealSuggestion": true
+293 },
+294 "dishType": "CURRY",
+295 "forChefit": true,
+296 "forParty": true,
+297 "nameHi": "",
+298 "nameBn": "",
+299 "id": 15,
+300 "name": "Kadhai Paneer 15"
+301 },
+302 {
+303 "categoryId": 1,
+304 "mealType": "MAIN COURSE",
+305 "type": "VEG",
+306 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+307 "image": null,
+308 "category": {
+309 "id": 1,
+310 "name": "North Indian",
+311 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+312 "isRecommendedForMealSuggestion": true
+313 },
+314 "dishType": "CURRY",
+315 "forChefit": true,
+316 "forParty": true,
+317 "nameHi": "",
+318 "nameBn": "",
+319 "id": 16,
+320 "name": "Kadhai Paneer 16"
+321 },
+322 {
+323 "categoryId": 1,
+324 "mealType": "MAIN COURSE",
+325 "type": "VEG",
+326 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+327 "image": null,
+328 "category": {
+329 "id": 1,
+330 "name": "North Indian",
+331 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+332 "isRecommendedForMealSuggestion": true
+333 },
+334 "dishType": "CURRY",
+335 "forChefit": true,
+
+336 "forParty": true,
+337 "nameHi": "",
+338 "nameBn": "",
+339 "id": 17,
+340 "name": "Kadhai Paneer 17"
+341 },
+342 {
+343 "categoryId": 1,
+344 "mealType": "MAIN COURSE",
+345 "type": "VEG",
+346 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+347 "image": null,
+348 "category": {
+349 "id": 1,
+350 "name": "North Indian",
+351 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+352 "isRecommendedForMealSuggestion": true
+353 },
+354 "dishType": "CURRY",
+355 "forChefit": true,
+356 "forParty": true,
+357 "nameHi": "",
+358 "nameBn": "",
+359 "id": 18,
+360 "name": "Kadhai Paneer 18"
+361 },
+362 {
+363 "categoryId": 1,
+364 "mealType": "MAIN COURSE",
+365 "type": "VEG",
+366 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+367 "image": null,
+368 "category": {
+369 "id": 1,
+370 "name": "North Indian",
+371 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+372 "isRecommendedForMealSuggestion": true
+373 },
+374 "dishType": "CURRY",
+375 "forChefit": true,
+376 "forParty": true,
+377 "nameHi": "",
+378 "nameBn": "",
+379 "id": 19,
+380 "name": "Kadhai Paneer 19"
+381 },
+382 {
+383 "categoryId": 1,
+384 "mealType": "MAIN COURSE",
+385 "type": "VEG",
+386 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+387 "image": null,
+388 "category": {
+389 "id": 1,
+390 "name": "North Indian",
+
+391 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+392 "isRecommendedForMealSuggestion": true
+393 },
+394 "dishType": "CURRY",
+395 "forChefit": true,
+396 "forParty": true,
+397 "nameHi": "",
+398 "nameBn": "",
+399 "id": 20,
+400 "name": "Kadhai Paneer 20"
+401 },
+402 {
+403 "categoryId": 1,
+404 "mealType": "MAIN COURSE",
+405 "type": "VEG",
+406 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+407 "image": null,
+408 "category": {
+409 "id": 1,
+410 "name": "North Indian",
+411 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+412 "isRecommendedForMealSuggestion": true
+413 },
+414 "dishType": "CURRY",
+415 "forChefit": true,
+416 "forParty": true,
+417 "nameHi": "",
+418 "nameBn": "",
+419 "id": 21,
+420 "name": "Kadhai Paneer 21"
+421 },
+422 {
+423 "categoryId": 1,
+424 "mealType": "MAIN COURSE",
+425 "type": "VEG",
+426 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+427 "image": null,
+428 "category": {
+429 "id": 1,
+430 "name": "North Indian",
+431 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+432 "isRecommendedForMealSuggestion": true
+433 },
+434 "dishType": "CURRY",
+435 "forChefit": true,
+436 "forParty": true,
+437 "nameHi": "",
+438 "nameBn": "",
+439 "id": 22,
+440 "name": "Kadhai Paneer 22"
+441 },
+442 {
+443 "categoryId": 1,
+444 "mealType": "MAIN COURSE",
+445 "type": "VEG",
+
+446 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+447 "image": null,
+448 "category": {
+449 "id": 1,
+450 "name": "North Indian",
+451 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+452 "isRecommendedForMealSuggestion": true
+453 },
+454 "dishType": "CURRY",
+455 "forChefit": true,
+456 "forParty": true,
+457 "nameHi": "",
+458 "nameBn": "",
+459 "id": 23,
+460 "name": "Kadhai Paneer 23"
+461 },
+462 {
+463 "categoryId": 1,
+464 "mealType": "MAIN COURSE",
+465 "type": "VEG",
+466 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+467 "image": null,
+468 "category": {
+469 "id": 1,
+470 "name": "North Indian",
+471 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+472 "isRecommendedForMealSuggestion": true
+473 },
+474 "dishType": "CURRY",
+475 "forChefit": true,
+476 "forParty": true,
+477 "nameHi": "",
+478 "nameBn": "",
+479 "id": 24,
+480 "name": "Kadhai Paneer 24"
+481 },
+482 {
+483 "categoryId": 1,
+484 "mealType": "MAIN COURSE",
+485 "type": "VEG",
+486 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+487 "image": null,
+488 "category": {
+489 "id": 1,
+490 "name": "North Indian",
+491 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+492 "isRecommendedForMealSuggestion": true
+493 },
+494 "dishType": "CURRY",
+495 "forChefit": true,
+496 "forParty": true,
+497 "nameHi": "",
+498 "nameBn": "",
+499 "id": 25,
+500 "name": "Kadhai Paneer 25"
+
+501 },
+502 {
+503 "categoryId": 1,
+504 "mealType": "MAIN COURSE",
+505 "type": "VEG",
+506 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+507 "image": null,
+508 "category": {
+509 "id": 1,
+510 "name": "North Indian",
+511 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+512 "isRecommendedForMealSuggestion": true
+513 },
+514 "dishType": "CURRY",
+515 "forChefit": true,
+516 "forParty": true,
+517 "nameHi": "",
+518 "nameBn": "",
+519 "id": 26,
+520 "name": "Kadhai Paneer 26"
+521 },
+522 {
+523 "categoryId": 1,
+524 "mealType": "MAIN COURSE",
+525 "type": "VEG",
+526 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+527 "image": null,
+528 "category": {
+529 "id": 1,
+530 "name": "North Indian",
+531 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+532 "isRecommendedForMealSuggestion": true
+533 },
+534 "dishType": "CURRY",
+535 "forChefit": true,
+536 "forParty": true,
+537 "nameHi": "",
+538 "nameBn": "",
+539 "id": 27,
+540 "name": "Kadhai Paneer 27"
+541 },
+542 {
+543 "categoryId": 1,
+544 "mealType": "MAIN COURSE",
+545 "type": "VEG",
+546 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+547 "image": null,
+548 "category": {
+549 "id": 1,
+550 "name": "North Indian",
+551 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+552 "isRecommendedForMealSuggestion": true
+553 },
+554 "dishType": "CURRY",
+555 "forChefit": true,
+
+556 "forParty": true,
+557 "nameHi": "",
+558 "nameBn": "",
+559 "id": 28,
+560 "name": "Kadhai Paneer 28"
+561 },
+562 {
+563 "categoryId": 1,
+564 "mealType": "MAIN COURSE",
+565 "type": "VEG",
+566 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+567 "image": null,
+568 "category": {
+569 "id": 1,
+570 "name": "North Indian",
+571 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+572 "isRecommendedForMealSuggestion": true
+573 },
+574 "dishType": "CURRY",
+575 "forChefit": true,
+576 "forParty": true,
+577 "nameHi": "",
+578 "nameBn": "",
+579 "id": 29,
+580 "name": "Kadhai Paneer 29"
+581 },
+582 {
+583 "categoryId": 1,
+584 "mealType": "MAIN COURSE",
+585 "type": "VEG",
+586 "description": "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
+587 "image": null,
+588 "category": {
+589 "id": 1,
+590 "name": "North Indian",
+591 "image":
+"https://storage.googleapis.com/chefkartimages/customer_app_assets/star_chef/north_indian.png",
+592 "isRecommendedForMealSuggestion": true
+593 },
+594 "dishType": "CURRY",
+595 "forChefit": true,
+596 "forParty": true,
+597 "nameHi": "",
+598 "nameBn": "",
+599 "id": 30,
+600 "name": "Kadhai Paneer 30"
+601 }
+602 ]
