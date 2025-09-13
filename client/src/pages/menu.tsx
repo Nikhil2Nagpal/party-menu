@@ -33,8 +33,14 @@ export default function MenuPage() {
     }
     
     // Veg/Non-veg filter
-    if (vegFilter && dish.type !== "VEG") return false;
-    if (nonVegFilter && dish.type !== "NON-VEG") return false;
+    if (vegFilter || nonVegFilter) {
+      // If both filters are active, show all dishes (OR logic)
+      if (vegFilter && nonVegFilter) return true;
+      // If only veg filter is active, show only VEG dishes
+      if (vegFilter && dish.type !== "VEG") return false;
+      // If only non-veg filter is active, show only NON-VEG dishes
+      if (nonVegFilter && dish.type !== "NON-VEG") return false;
+    }
     
     return true;
   });
@@ -52,8 +58,14 @@ export default function MenuPage() {
       }
       
       // Veg/Non-veg filter
-      if (vegFilter && dish.type !== "VEG") return false;
-      if (nonVegFilter && dish.type !== "NON-VEG") return false;
+      if (vegFilter || nonVegFilter) {
+        // If both filters are active, show all dishes (OR logic)
+        if (vegFilter && nonVegFilter) return true;
+        // If only veg filter is active, show only VEG dishes
+        if (vegFilter && dish.type !== "VEG") return false;
+        // If only non-veg filter is active, show only NON-VEG dishes
+        if (nonVegFilter && dish.type !== "NON-VEG") return false;
+      }
       
       return true;
     }).length;

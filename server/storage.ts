@@ -167,6 +167,42 @@ export class MemStorage implements IStorage {
           { name: "Baking Powder", quantity: "1 tsp" },
           { name: "Fresh Herbs", quantity: "2 tbsp" }
         ]
+      },
+      {
+        id: "9",
+        name: "Chicken Wings",
+        description: "Crispy chicken wings tossed in spicy buffalo sauce.",
+        image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "STARTER",
+        type: "NON-VEG",
+        dishType: "APPETIZER",
+        categoryId: 2,
+        forParty: "true",
+        ingredients: [
+          { name: "Chicken Wings", quantity: "500g" },
+          { name: "Buffalo Sauce", quantity: "1/2 cup" },
+          { name: "Garlic Powder", quantity: "1 tsp" },
+          { name: "Paprika", quantity: "1 tsp" },
+          { name: "Celery Salt", quantity: "1/2 tsp" }
+        ]
+      },
+      {
+        id: "10",
+        name: "Fish Tikka",
+        description: "Marinated fish pieces grilled to perfection with aromatic spices.",
+        image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "STARTER",
+        type: "NON-VEG",
+        dishType: "GRILLED",
+        categoryId: 2,
+        forParty: "true",
+        ingredients: [
+          { name: "Fish Fillet", quantity: "400g" },
+          { name: "Yogurt", quantity: "1/2 cup" },
+          { name: "Ginger-Garlic Paste", quantity: "2 tbsp" },
+          { name: "Red Chili Powder", quantity: "1 tsp" },
+          { name: "Garam Masala", quantity: "1 tsp" }
+        ]
       }
     ];
 
