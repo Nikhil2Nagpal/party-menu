@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import { type Dish } from "@shared/schema";
+import { CheckCircle } from "lucide-react";
 
 interface OrderPageProps {
   selectedDishIds: string[];
@@ -8,6 +10,7 @@ interface OrderPageProps {
 
 export default function OrderPage() {
   const [, navigate] = useLocation();
+  const [orderPlaced, setOrderPlaced] = useState(false);
   
   // Get selected dish IDs from URL params or local storage
   const urlParams = new URLSearchParams(window.location.search);
@@ -32,6 +35,72 @@ export default function OrderPage() {
   const gstAmount = Math.round(totalAmount * 0.18);
   const finalAmount = totalAmount + gstAmount;
 
+  const handlePlaceOrder = () => {
+    // Simulate order placement
+    setOrderPlaced(true);
+  };
+
+  // Order Success Screen
+  if (orderPlaced) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <div className="max-w-md mx-auto text-center px-6">
+          {/* Success Icon */}
+          <div className="mb-8">
+            <div className="mx-auto w-24 h-24 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center">
+              <CheckCircle className="w-16 h-16 text-green-600 dark:text-green-400" />
+            </div>
+          </div>
+          
+          {/* Success Message */}
+          <div className="mb-8">
+            <h1 className="text-2xl font-bold text-foreground mb-4">
+              Order Placed Successfully! 🎉
+            </h1>
+            <p className="text-lg text-muted-foreground mb-2">
+              आपका ऑर्डर प्लेस हो गया है!
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Total Amount: <span className="font-semibold text-green-600">₹{finalAmount}</span>
+            </p>
+          </div>
+
+          {/* Order Details */}
+          <div className="bg-muted/50 rounded-lg p-4 mb-8 text-left">
+            <h3 className="font-semibold text-foreground mb-3">Order Summary:</h3>
+            <div className="space-y-2 text-sm">
+              {selectedDishes.map((dish) => (
+                <div key={dish.id} className="flex justify-between">
+                  <span className="text-muted-foreground">{dish.name}</span>
+                  <span className="text-foreground">₹{dish.price}</span>
+                </div>
+              ))}
+              <hr className="border-border my-2" />
+              <div className="flex justify-between font-semibold">
+                <span>Total (including GST)</span>
+                <span className="text-green-600">₹{finalAmount}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Action Buttons */}
+          <div className="space-y-3">
+            <button 
+              onClick={() => navigate("/")}
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 rounded-lg font-medium transition-colors"
+              data-testid="button-new-order"
+            >
+              Order More Items
+            </button>
+            <div className="text-xs text-muted-foreground">
+              Expected delivery time: 45-60 minutes
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -53,6 +122,7 @@ export default function OrderPage() {
             </div>
             <div className="flex items-center space-x-4">
               <button 
+                onClick={handlePlaceOrder}
                 className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
                 data-testid="button-place-order"
               >
@@ -140,6 +210,7 @@ export default function OrderPage() {
 
                 <div className="space-y-3">
                   <button 
+                    onClick={handlePlaceOrder}
                     className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-colors"
                     data-testid="button-confirm-order"
                   >
