@@ -39,11 +39,23 @@ export default function MenuPage() {
     return true;
   });
 
-  // Count selected dishes by category
+  // Count selected dishes by category (only those matching current filters)
   const getSelectedCountByCategory = (category: string) => {
     return selectedDishes.filter(dishId => {
       const dish = dishes.find(d => d.id === dishId);
-      return dish?.mealType === category;
+      if (!dish || dish.mealType !== category) return false;
+      
+      // Apply the same filter logic as filteredDishes
+      // Search filter
+      if (searchTerm && !dish.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        return false;
+      }
+      
+      // Veg/Non-veg filter
+      if (vegFilter && dish.type !== "VEG") return false;
+      if (nonVegFilter && dish.type !== "NON-VEG") return false;
+      
+      return true;
     }).length;
   };
 
