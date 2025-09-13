@@ -35,6 +35,12 @@ export function DishCard({ dish, isSelected, onAdd, onRemove, onViewIngredients 
           </button>
         </div>
         <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{dish.description}</p>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center space-x-2">
+            <span className="text-xl font-bold text-primary">₹{dish.price}</span>
+            <span className="text-xs text-muted-foreground">{dish.mealType}</span>
+          </div>
+        </div>
         <div className="flex items-center justify-between">
           <button 
             className="text-accent hover:text-accent/80 font-medium text-sm flex items-center space-x-1"
@@ -44,7 +50,6 @@ export function DishCard({ dish, isSelected, onAdd, onRemove, onViewIngredients 
             <i className="fas fa-list-ul"></i>
             <span>Ingredients</span>
           </button>
-          <span className="text-xs text-muted-foreground">{dish.mealType}</span>
         </div>
       </div>
     </div>

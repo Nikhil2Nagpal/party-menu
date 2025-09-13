@@ -13,6 +13,7 @@ export const dishes = pgTable("dishes", {
   dishType: text("dish_type"),
   categoryId: integer("category_id"),
   forParty: text("for_party").default("true"),
+  price: integer("price").notNull(), // Price in rupees
   ingredients: jsonb("ingredients").$type<Array<{ name: string; quantity: string }>>(),
 });
 

@@ -28,12 +28,13 @@ export class MemStorage implements IStorage {
         id: "1",
         name: "Kadhai Paneer",
         description: "Paneer cubes in spicy onion gravy with onions and capsicum cubes.",
-        image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
         mealType: "MAIN COURSE",
         type: "VEG",
         dishType: "CURRY",
         categoryId: 1,
         forParty: "true",
+        price: 280,
         ingredients: [
           { name: "Paneer", quantity: "200g" },
           { name: "Onion", quantity: "2 large" },
@@ -46,12 +47,13 @@ export class MemStorage implements IStorage {
         id: "2",
         name: "Butter Chicken",
         description: "Tender chicken in rich, creamy tomato and butter sauce with aromatic spices.",
-        image: "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
         mealType: "MAIN COURSE",
         type: "NON-VEG",
         dishType: "CURRY",
         categoryId: 1,
         forParty: "true",
+        price: 320,
         ingredients: [
           { name: "Chicken", quantity: "500g" },
           { name: "Butter", quantity: "50g" },
@@ -70,6 +72,7 @@ export class MemStorage implements IStorage {
         dishType: "SALAD",
         categoryId: 2,
         forParty: "true",
+        price: 180,
         ingredients: [
           { name: "Mixed Greens", quantity: "2 cups" },
           { name: "Cherry Tomatoes", quantity: "1 cup" },
@@ -88,6 +91,7 @@ export class MemStorage implements IStorage {
         dishType: "DAL",
         categoryId: 1,
         forParty: "true",
+        price: 220,
         ingredients: [
           { name: "Yellow Lentils", quantity: "1 cup" },
           { name: "Cumin Seeds", quantity: "1 tsp" },
@@ -106,6 +110,7 @@ export class MemStorage implements IStorage {
         dishType: "SNACK",
         categoryId: 2,
         forParty: "true",
+        price: 120,
         ingredients: [
           { name: "Potatoes", quantity: "3 large" },
           { name: "Green Peas", quantity: "1/2 cup" },
@@ -124,6 +129,7 @@ export class MemStorage implements IStorage {
         dishType: "SWEET",
         categoryId: 3,
         forParty: "true",
+        price: 150,
         ingredients: [
           { name: "Milk Powder", quantity: "1 cup" },
           { name: "Sugar", quantity: "2 cups" },
@@ -142,6 +148,7 @@ export class MemStorage implements IStorage {
         dishType: "RICE",
         categoryId: 1,
         forParty: "true",
+        price: 380,
         ingredients: [
           { name: "Basmati Rice", quantity: "2 cups" },
           { name: "Chicken", quantity: "500g" },
@@ -160,6 +167,7 @@ export class MemStorage implements IStorage {
         dishType: "BREAD",
         categoryId: 4,
         forParty: "true",
+        price: 80,
         ingredients: [
           { name: "All Purpose Flour", quantity: "2 cups" },
           { name: "Garlic", quantity: "4 cloves" },
@@ -178,6 +186,7 @@ export class MemStorage implements IStorage {
         dishType: "APPETIZER",
         categoryId: 2,
         forParty: "true",
+        price: 250,
         ingredients: [
           { name: "Chicken Wings", quantity: "500g" },
           { name: "Buffalo Sauce", quantity: "1/2 cup" },
@@ -196,12 +205,245 @@ export class MemStorage implements IStorage {
         dishType: "GRILLED",
         categoryId: 2,
         forParty: "true",
+        price: 280,
         ingredients: [
           { name: "Fish Fillet", quantity: "400g" },
           { name: "Yogurt", quantity: "1/2 cup" },
           { name: "Ginger-Garlic Paste", quantity: "2 tbsp" },
           { name: "Red Chili Powder", quantity: "1 tsp" },
           { name: "Garam Masala", quantity: "1 tsp" }
+        ]
+      },
+      // More STARTER items
+      {
+        id: "11",
+        name: "Paneer Tikka",
+        description: "Marinated cottage cheese cubes grilled with bell peppers and onions.",
+        image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "STARTER",
+        type: "VEG",
+        dishType: "GRILLED",
+        categoryId: 2,
+        forParty: "true",
+        price: 220,
+        ingredients: [
+          { name: "Paneer", quantity: "300g" },
+          { name: "Bell Peppers", quantity: "2" },
+          { name: "Onions", quantity: "2" },
+          { name: "Yogurt", quantity: "1/2 cup" },
+          { name: "Tandoori Masala", quantity: "2 tbsp" }
+        ]
+      },
+      {
+        id: "12",
+        name: "Seekh Kebab",
+        description: "Spiced minced meat skewers grilled to perfection with herbs and spices.",
+        image: "https://images.unsplash.com/photo-1506280754576-f6fa8a873550?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "STARTER",
+        type: "NON-VEG",
+        dishType: "GRILLED",
+        categoryId: 2,
+        forParty: "true",
+        price: 300,
+        ingredients: [
+          { name: "Minced Meat", quantity: "500g" },
+          { name: "Onions", quantity: "2" },
+          { name: "Green Chilies", quantity: "3" },
+          { name: "Ginger-Garlic Paste", quantity: "2 tbsp" },
+          { name: "Red Chili Powder", quantity: "1 tsp" }
+        ]
+      },
+      // More MAIN COURSE items
+      {
+        id: "13",
+        name: "Rajma Masala",
+        description: "Red kidney beans cooked in rich tomato and onion gravy with spices.",
+        image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "MAIN COURSE",
+        type: "VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 240,
+        ingredients: [
+          { name: "Rajma", quantity: "2 cups" },
+          { name: "Tomatoes", quantity: "3 large" },
+          { name: "Onions", quantity: "2" },
+          { name: "Ginger-Garlic Paste", quantity: "2 tbsp" },
+          { name: "Garam Masala", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "14",
+        name: "Mutton Curry",
+        description: "Tender mutton pieces cooked in traditional spices and rich gravy.",
+        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "MAIN COURSE",
+        type: "NON-VEG",
+        dishType: "CURRY",
+        categoryId: 1,
+        forParty: "true",
+        price: 420,
+        ingredients: [
+          { name: "Mutton", quantity: "500g" },
+          { name: "Onions", quantity: "3" },
+          { name: "Tomatoes", quantity: "2" },
+          { name: "Yogurt", quantity: "1/2 cup" },
+          { name: "Whole Spices", quantity: "1 set" }
+        ]
+      },
+      // More DESSERT items
+      {
+        id: "15",
+        name: "Ras Malai",
+        description: "Soft cottage cheese dumplings in sweetened thickened milk with cardamom.",
+        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 180,
+        ingredients: [
+          { name: "Cottage Cheese", quantity: "200g" },
+          { name: "Milk", quantity: "1 liter" },
+          { name: "Sugar", quantity: "1 cup" },
+          { name: "Cardamom", quantity: "4 pods" },
+          { name: "Pistachios", quantity: "2 tbsp" }
+        ]
+      },
+      {
+        id: "16",
+        name: "Kulfi",
+        description: "Traditional Indian ice cream with cardamom and pistachios.",
+        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "FROZEN",
+        categoryId: 3,
+        forParty: "true",
+        price: 120,
+        ingredients: [
+          { name: "Full Fat Milk", quantity: "1 liter" },
+          { name: "Sugar", quantity: "1/2 cup" },
+          { name: "Cardamom Powder", quantity: "1 tsp" },
+          { name: "Pistachios", quantity: "3 tbsp" },
+          { name: "Almonds", quantity: "2 tbsp" }
+        ]
+      },
+      {
+        id: "17",
+        name: "Gajar Halwa",
+        description: "Rich carrot pudding cooked with milk, sugar and garnished with nuts.",
+        image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 160,
+        ingredients: [
+          { name: "Carrots", quantity: "1 kg" },
+          { name: "Milk", quantity: "500ml" },
+          { name: "Sugar", quantity: "3/4 cup" },
+          { name: "Ghee", quantity: "3 tbsp" },
+          { name: "Dry Fruits", quantity: "1/4 cup" }
+        ]
+      },
+      {
+        id: "18",
+        name: "Kheer",
+        description: "Creamy rice pudding cooked in milk with cardamom and nuts.",
+        image: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "DESSERT",
+        type: "VEG",
+        dishType: "SWEET",
+        categoryId: 3,
+        forParty: "true",
+        price: 140,
+        ingredients: [
+          { name: "Basmati Rice", quantity: "1/4 cup" },
+          { name: "Full Fat Milk", quantity: "1 liter" },
+          { name: "Sugar", quantity: "1/2 cup" },
+          { name: "Cardamom", quantity: "3 pods" },
+          { name: "Almonds", quantity: "2 tbsp" }
+        ]
+      },
+      // More SIDES items
+      {
+        id: "19",
+        name: "Jeera Rice",
+        description: "Fragrant basmati rice cooked with cumin seeds and whole spices.",
+        image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "RICE",
+        categoryId: 4,
+        forParty: "true",
+        price: 180,
+        ingredients: [
+          { name: "Basmati Rice", quantity: "2 cups" },
+          { name: "Cumin Seeds", quantity: "2 tsp" },
+          { name: "Bay Leaves", quantity: "2" },
+          { name: "Ghee", quantity: "2 tbsp" },
+          { name: "Salt", quantity: "to taste" }
+        ]
+      },
+      {
+        id: "20",
+        name: "Butter Naan",
+        description: "Soft leavened bread brushed with butter and cooked in tandoor.",
+        image: "https://images.unsplash.com/photo-1628294895950-9805252327bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "BREAD",
+        categoryId: 4,
+        forParty: "true",
+        price: 70,
+        ingredients: [
+          { name: "All Purpose Flour", quantity: "2 cups" },
+          { name: "Yogurt", quantity: "1/4 cup" },
+          { name: "Butter", quantity: "3 tbsp" },
+          { name: "Baking Powder", quantity: "1 tsp" },
+          { name: "Salt", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "21",
+        name: "Mixed Raita",
+        description: "Cooling yogurt side dish with cucumber, onion and mint.",
+        image: "https://images.unsplash.com/photo-1596797882870-8c33ddeaa639?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "ACCOMPANIMENT",
+        categoryId: 4,
+        forParty: "true",
+        price: 90,
+        ingredients: [
+          { name: "Yogurt", quantity: "2 cups" },
+          { name: "Cucumber", quantity: "1 large" },
+          { name: "Onions", quantity: "1 small" },
+          { name: "Mint Leaves", quantity: "2 tbsp" },
+          { name: "Chat Masala", quantity: "1 tsp" }
+        ]
+      },
+      {
+        id: "22",
+        name: "Papad",
+        description: "Crispy thin wafers made from lentil flour, perfect as a side.",
+        image: "https://images.unsplash.com/photo-1626132647523-66f4bf380027?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=240",
+        mealType: "SIDES",
+        type: "VEG",
+        dishType: "ACCOMPANIMENT",
+        categoryId: 4,
+        forParty: "true",
+        price: 40,
+        ingredients: [
+          { name: "Urad Dal", quantity: "1 cup" },
+          { name: "Salt", quantity: "1 tsp" },
+          { name: "Black Pepper", quantity: "1/2 tsp" },
+          { name: "Asafoetida", quantity: "1 pinch" },
+          { name: "Oil", quantity: "for frying" }
         ]
       }
     ];

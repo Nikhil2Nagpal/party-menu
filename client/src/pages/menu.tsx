@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import { CategoryTabs } from "@/components/category-tabs";
 import { SearchFilters } from "@/components/search-filters";
 import { DishCard } from "@/components/dish-card";
@@ -10,6 +11,7 @@ import { type Dish } from "@shared/schema";
 const MEAL_TYPES = ["STARTER", "MAIN COURSE", "DESSERT", "SIDES"];
 
 export default function MenuPage() {
+  const [, navigate] = useLocation();
   const [selectedCategory, setSelectedCategory] = useState("STARTER");
   const [searchTerm, setSearchTerm] = useState("");
   const [vegFilter, setVegFilter] = useState(false);
@@ -92,8 +94,9 @@ export default function MenuPage() {
   };
 
   const handleContinue = () => {
-    // TODO: Navigate to checkout or next step
-    console.log("Continue with selected dishes:", selectedDishes);
+    // Navigate to order page with selected dishes
+    const dishIds = selectedDishes.join(",");
+    navigate(`/order?dishes=${dishIds}`);
   };
 
   if (isLoading) {
