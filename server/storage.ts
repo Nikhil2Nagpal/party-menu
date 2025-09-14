@@ -468,7 +468,7 @@ export class MemStorage implements IStorage {
       
       // 5 NEW STARTER ITEMS
       {
-        id: "23",
+        id: "24",
         name: "Spring Rolls",
         description: "Crispy vegetable rolls with sweet chili dipping sauce.",
         image: "/images/spring-rolls.jfif",
@@ -487,7 +487,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "24",
+        id: "25",
         name: "Chicken Lollipop",
         description: "Deep-fried chicken drumettes in spicy glaze.",
         image: "/images/chicken-lollipop.jfif",
@@ -506,7 +506,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "25",
+        id: "26",
         name: "Aloo Tikki",
         description: "Spiced potato patties with mint chutney.",
         image: "/images/aloo-tikki.jfif",
@@ -525,7 +525,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "26",
+        id: "27",
         name: "Prawn Tempura",
         description: "Lightly battered fried prawns with sweet chili sauce.",
         image: "/images/prown.jfif",
@@ -544,7 +544,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "27",
+        id: "28",
         name: "Bruschetta",
         description: "Toasted bread topped with tomatoes, basil and mozzarella.",
         image: "/images/bruschetta.jfif",
@@ -565,7 +565,7 @@ export class MemStorage implements IStorage {
       
       // 5 NEW MAIN COURSE ITEMS
       {
-        id: "28",
+        id: "29",
         name: "Palak Paneer",
         description: "Cottage cheese cubes in creamy spinach gravy.",
         image: "/images/palak-paneer.jfif",
@@ -584,7 +584,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "29",
+        id: "30",
         name: "Lamb Rogan Josh",
         description: "Tender lamb in aromatic Kashmiri spices.",
         image: "/images/lamb.jfif",
@@ -603,7 +603,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "30",
+        id: "31",
         name: "Chana Masala",
         description: "Spiced chickpea curry with onions and tomatoes.",
         image: "/images/chana.jfif",
@@ -622,7 +622,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "31",
+        id: "32",
         name: "Prawn Biryani",
         description: "Fragrant rice layered with spiced prawns and saffron.",
         image: "/images/prawn.jfif",
@@ -641,7 +641,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "32",
+        id: "33",
         name: "Eggplant Curry",
         description: "Tender eggplant in spicy tomato-onion gravy.",
         image: "/images/eggplant.jfif",
@@ -662,7 +662,7 @@ export class MemStorage implements IStorage {
       
       // 5 NEW DESSERT ITEMS
       {
-        id: "33",
+        id: "34",
         name: "Chocolate Mousse",
         description: "Light and airy chocolate mousse with berry compote.",
         image: "/images/mousse.jfif",
@@ -681,7 +681,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "34",
+        id: "35",
         name: "Tiramisu",
         description: "Classic Italian coffee-flavored dessert.",
         image: "/images/tiramisu.jfif",
@@ -700,7 +700,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "35",
+        id: "36",
         name: "Fruit Parfait",
         description: "Layered yogurt with seasonal fruits and granola.",
         image: "/images/parfait.jfif",
@@ -719,7 +719,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "36",
+        id: "37",
         name: "Cheesecake",
         description: "Creamy New York style cheesecake with berry topping.",
         image: "/images/cake.jfif",
@@ -738,7 +738,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "37",
+        id: "38",
         name: "Ice Cream Sundae",
         description: "Vanilla ice cream with hot fudge and nuts.",
         image: "/images/icecream.jfif",
@@ -759,7 +759,7 @@ export class MemStorage implements IStorage {
       
       // 5 NEW SIDES ITEMS
       {
-        id: "38",
+        id: "39",
         name: "Garlic Bread",
         description: "Toasted bread with garlic butter and herbs.",
         image: "/images/bread.jfif",
@@ -778,7 +778,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "39",
+        id: "40",
         name: "Mashed Potatoes",
         description: "Creamy mashed potatoes with butter and herbs.",
         image: "/images/potato.jfif",
@@ -797,7 +797,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "40",
+        id: "41",
         name: "Steamed Vegetables",
         description: "Seasonal vegetables steamed with herbs.",
         image: "/images/steam-vegies.jfif",
@@ -816,7 +816,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "41",
+        id: "42",
         name: "Fried Rice",
         description: "Egg fried rice with vegetables and soy sauce.",
         image: "/images/fried.jfif",
@@ -835,7 +835,7 @@ export class MemStorage implements IStorage {
         ]
       },
       {
-        id: "42",
+        id: "43",
         name: "Coleslaw",
         description: "Fresh cabbage salad with creamy dressing.",
         image: "/images/coleslaw.jfif",
